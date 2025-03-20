@@ -98,9 +98,25 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-7"></div>
+          <div className="col-6"></div>
         </div>
-        <div className="lower_footer"></div>
+      </div>
+      <div className="lower_footer_container">
+        <div className="lower_footer d-flex">
+          <div className="btn">
+            <a href="">sign up now!</a>
+          </div>
+          <div className="socials d-flex">
+            <h3>
+              <a href="">follow us</a>
+            </h3>
+            <img src="/public/footer-facebook.png" alt="" />
+            <img src="/public/footer-twitter.png" alt="" />
+            <img src="/public/footer-youtube.png" alt="" />
+            <img src="/public/footer-pinterest.png" alt="" />
+            <img src="/public/footer-periscope.png" alt="" />
+          </div>
+        </div>
       </div>
     </footer>
   );
