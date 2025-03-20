@@ -22,18 +22,29 @@
 /*Header*/
 
 header {
-  padding: 1rem 0;
+  .logo {
+    padding: 1rem 0;
+  }
   .menu {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   ul {
     display: flex;
     gap: 2rem;
+
     a {
+      padding: 3rem 0;
       text-decoration: none;
       color: var(--dc-light-dark);
       text-transform: uppercase;
+      font-weight: 700;
+      border-bottom: 5px solid var(--dc-light);
+      &:hover {
+        border-bottom: 5px solid var(--dc-primary);
+        color: var(--dc-primary);
+      }
     }
   }
 }
