@@ -48,3 +48,19 @@ header {
     }
   }
 }
+
+/*Main*/
+
+/*Content section*/
+main {
+  background-color: var(--dc-dark);
+  .container {
+    padding: 4rem 0;
+    width: 75%;
+    margin: auto;
+    h1 {
+      color: var(--dc-light);
+    }
+  }
+}
+/*Features section*/
