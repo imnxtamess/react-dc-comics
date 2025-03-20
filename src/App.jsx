@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Features from "./components/Features";
 import Footer from "./components/Footer";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Main />
+      <Features />
       <Footer />
     </>
   );

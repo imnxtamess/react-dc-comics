@@ -1,5 +1,3 @@
-import Features from "./Features";
-
 export default function Main() {
   // LOGIC HERE
 
