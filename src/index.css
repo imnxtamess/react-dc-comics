@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --dc-primary: #0282f9;
+  --dc-dark: #1c1c1c;
+  --dc-light: #ffffff;
+  --dc-light-dark: #6e6c68;
+  --dc-subtitle: #7e7d72;
+}
+
+/*Utilities*/
+
+.unstyled-list {
+  list-style: none;
+}
+
+/*Header*/
+
+header {
+  padding: 1rem 0;
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul {
+    display: flex;
+    gap: 2rem;
+    a {
+      text-decoration: none;
+      color: var(--dc-light-dark);
+      text-transform: uppercase;
+    }
+  }
+}
