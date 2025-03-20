@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       <nav className="menu">
         <div className="logo">
-          <img src="/dc-logo.png" alt="" />
+          <img src="../../public/dc-logo.png" alt="" />
         </div>
         <ul className="unstyled-list">
           <li>
