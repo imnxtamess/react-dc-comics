@@ -1,3 +1,5 @@
+import Features from "./Features";
+
 export default function Main() {
   // LOGIC HERE
 
@@ -6,6 +8,7 @@ export default function Main() {
       <div className="container">
         <h1>--&gt; Content goes here &lt;--</h1>
       </div>
+      <Features />
     </main>
   );
 }

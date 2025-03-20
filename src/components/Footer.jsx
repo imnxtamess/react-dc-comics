@@ -110,11 +110,21 @@ export default function Footer() {
             <h3>
               <a href="">follow us</a>
             </h3>
-            <img src="/public/footer-facebook.png" alt="" />
-            <img src="/public/footer-twitter.png" alt="" />
-            <img src="/public/footer-youtube.png" alt="" />
-            <img src="/public/footer-pinterest.png" alt="" />
-            <img src="/public/footer-periscope.png" alt="" />
+            <a href="">
+              <img src="/public/footer-facebook.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/public/footer-twitter.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/public/footer-youtube.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/public/footer-pinterest.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/public/footer-periscope.png" alt="" />
+            </a>
           </div>
         </div>
       </div>

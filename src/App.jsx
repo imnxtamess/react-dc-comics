@@ -1,14 +1,13 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Features from "./components/Features";
 import Footer from "./components/Footer";
+import Features from "./components/Features";
 
 function App() {
   return (
     <>
       <Header />
       <Main />
-      <Features />
       <Footer />
     </>
   );
