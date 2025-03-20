@@ -109,11 +109,11 @@ main {
 /*Footer*/
 footer {
   .upper_footer_container {
-    padding: 4rem 0rem;
+    padding: 1rem 0rem;
     background-image: url("/dc-logo-bg.png"), url("/footer-bg.jpg");
     background-position: 80%, 50%;
     background-repeat: no-repeat;
-    background-size: 800px, cover;
+    background-size: 650px, cover;
     .upper_footer {
       width: 75%;
       margin: auto;
