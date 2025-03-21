@@ -107,9 +107,7 @@ export default function Footer() {
             <a href="">sign up now!</a>
           </div>
           <div className="socials d-flex">
-            <h3>
-              <a href="">follow us</a>
-            </h3>
+            <h3>follow us</h3>
             <a href="">
               <img src="/public/footer-facebook.png" alt="" />
             </a>
