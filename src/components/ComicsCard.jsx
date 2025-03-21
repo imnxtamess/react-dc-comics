@@ -3,7 +3,9 @@ export default function ComicsCard({ img, title }) {
 
   return (
     <div className="card">
-      <img src={img} alt={title} />
+      <div className="card_header">
+        <img src={img} alt={title} />
+      </div>
       <span>{title}</span>
     </div>
   );
