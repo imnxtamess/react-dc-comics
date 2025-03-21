@@ -5,9 +5,9 @@ export default function Main() {
 
   return (
     <main>
-      <div className="container">
-        <h1>--&gt; Content goes here &lt;--</h1>
-      </div>
+      <div className="jumbotron"></div>
+      <div className="comicsContainer"></div>
+
       <Features />
     </main>
   );

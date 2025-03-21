@@ -41,6 +41,12 @@
   flex-wrap: wrap;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
 /*Header*/
 
 header {
@@ -71,13 +77,21 @@ header {
 }
 
 /*Main*/
-
-/*Content section*/
 main {
   background-color: var(--dc-dark);
-  h1 {
-    color: var(--dc-light);
-  }
+}
+/*Jumbotron*/
+.jumbotron {
+  background-image: url("/jumbotron.jpg");
+  background-size: cover;
+  height: 400px;
+}
+/*Content section*/
+.comicsContainer {
+  background-color: var(--dc-dark);
+  height: 200px;
+  width: 75%;
+  margin: auto;
 }
 
 /*Features section*/
