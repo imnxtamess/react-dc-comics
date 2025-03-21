@@ -8,7 +8,7 @@ export default function ComicsList() {
       <div className="row">
         <div className="col-2">
           <ComicsCard
-            img="https://d.newsweek.com/en/full/787534/action-comics-1000-display.jpg?w=1600&h=1600&q=88&f=46e08ccd48e6b27aea4a8792e410b1c4"
+            img="https://subscriptions.acecomics.co.uk/wp-content/uploads/2018/05/action1000hc.jpg"
             title="Action Comics"
           />
         </div>
