@@ -4,7 +4,7 @@ export default function ComicsCard({ img, title }) {
   return (
     <div className="card">
       <img src={img} alt={title} />
-      <h3>{title}</h3>
+      <span>{title}</span>
     </div>
   );
 }

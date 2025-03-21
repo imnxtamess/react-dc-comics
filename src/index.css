@@ -31,7 +31,7 @@
 
 .col-2 {
   width: calc(100% / 12 * 2);
-  padding: 1rem;
+  padding: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -88,10 +88,36 @@ main {
 }
 /*Content section*/
 .comicsContainer {
+  padding: 2rem 0rem;
   background-color: var(--dc-dark);
-  height: 200px;
   width: 75%;
   margin: auto;
+  .badge {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: var(--dc-primary);
+    color: var(--dc-light);
+    position: absolute;
+    font-weight: 750;
+    transform: translateX(-50%) translateY(-50%);
+    left: 20%;
+    top: 59.3%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    img {
+      width: 185px;
+      height: 185px;
+    }
+    span {
+      color: var(--dc-light);
+      text-transform: uppercase;
+    }
+  }
 }
 
 /*Features section*/

@@ -1,4 +1,5 @@
 import Features from "./Features";
+import ComicsList from "./ComicsList";
 
 export default function Main() {
   // LOGIC HERE
@@ -6,8 +7,7 @@ export default function Main() {
   return (
     <main>
       <div className="jumbotron"></div>
-      <div className="comicsContainer"></div>
-
+      <ComicsList />
       <Features />
     </main>
   );
