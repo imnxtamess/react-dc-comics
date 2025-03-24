@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer({ comicsLinks, shopLinks, dcLinks, siteLinks }) {
   // LOGIC HERE
 
   return (
@@ -8,94 +8,39 @@ export default function Footer() {
           <div class="col-2">
             <ul className="unstyled-list useful-links-list">
               <h3>DC COMICS</h3>
-              <li>
-                <a href="">Characters</a>
-              </li>
-              <li>
-                <a href="">Comics</a>
-              </li>
-              <li>
-                <a href="">Movies</a>
-              </li>
-              <li>
-                <a href="">TV</a>
-              </li>
-              <li>
-                <a href="">Games</a>
-              </li>
-              <li>
-                <a href="">Videos</a>
-              </li>
-              <li>
-                <a href="">News</a>
-              </li>
+              {comicsLinks.map((link) => (
+                <li key={link.id}>
+                  <a href={link.link}>{link.name}</a>
+                </li>
+              ))}
             </ul>
             <ul className="unstyled-list useful-links-list">
               <h3>SHOP</h3>
-              <li>
-                <a href="">SHOP DC</a>
-              </li>
-              <li>
-                <a href="">SHOP DC Collectibles</a>
-              </li>
+              {shopLinks.map((link) => (
+                <li key={link.id}>
+                  <a href={link.link}>{link.name}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div class="col-2">
             <ul className="unstyled-list useful-links-list">
               <h3>DC</h3>
-              <li>
-                <a href="">Terms Of Use</a>
-              </li>
-              <li>
-                <a href="">Privacy policy (New)</a>
-              </li>
-              <li>
-                <a href="">Ad Choices</a>
-              </li>
-              <li>
-                <a href="">Advertising</a>
-              </li>
-              <li>
-                <a href="">Jobs</a>
-              </li>
-              <li>
-                <a href="">Subscriptions</a>
-              </li>
-              <li>
-                <a href="">Talent Workshops</a>
-              </li>
-              <li>
-                <a href="">CPSC Certificates</a>
-              </li>
-              <li>
-                <a href="">Ratings</a>
-              </li>
-              <li>
-                <a href="">Shop Help</a>
-              </li>
-              <li>
-                <a href="">Contact Us</a>
-              </li>
+              {dcLinks.map((link) => (
+                <li key={link.id}>
+                  <a href={link.link}>{link.name}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div class="col-2">
             <ul className="unstyled-list useful-links-list">
               <h3>SITES</h3>
-              <li>
-                <a href="">DC</a>
-              </li>
-              <li>
-                <a href="">MAD Magazine</a>
-              </li>
-              <li>
-                <a href="">DC Kids</a>
-              </li>
-              <li>
-                <a href="">DC Universe</a>
-              </li>
-              <li>
-                <a href="">Power Visa</a>
-              </li>
+              {siteLinks.map((link) => (
+                <li key={link.id}>
+                  <a href={link.link}>{link.name}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="col-6"></div>

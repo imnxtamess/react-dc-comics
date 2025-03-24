@@ -5,7 +5,7 @@ export default function Header({ links }) {
     <header>
       <nav className="menu">
         <div className="logo">
-          <img src="../../public/dc-logo.png" alt="" />
+          <img src="dc-logo.png" alt="" />
         </div>
         <ul className="unstyled-list">
           {links.map((link) => (

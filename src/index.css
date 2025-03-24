@@ -185,6 +185,7 @@ footer {
         li {
           margin: 0.5rem 0rem;
           a {
+            text-transform: capitalize;
             text-decoration: none;
             color: var(--dc-subtitle);
             &:hover {
