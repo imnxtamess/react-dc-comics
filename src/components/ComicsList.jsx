@@ -8,7 +8,7 @@ export default function ComicsList() {
       <div className="badge">CURRENT SERIES</div>
       <div className="row">
         {comics.map((comic) => (
-          <ComicsCard img={comic.thumb} title={comic.title} />
+          <ComicsCard key={comic.id} img={comic.thumb} title={comic.title} />
         ))}
       </div>
       <div className="moreBtn">load more</div>
