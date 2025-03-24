@@ -6,6 +6,7 @@ export default function ComicsList() {
   const [typeQuery, setTypeQuery] = useState(""); // State to store the Type query
   const [seriesQuery, setSeriesQuery] = useState(""); // State to store the Series query
   const [artistsQuery, setArtistsQuery] = useState(""); // State to store the Artists query
+  const [writersQuery, setWritersQuery] = useState(""); // State to store the Writers query
 
   // Filter comics based on the queries
   const filteredComics = comics.filter((comic) => {
@@ -16,7 +17,11 @@ export default function ComicsList() {
       (comic.artists.some((artist) =>
         artist.toLowerCase().includes(artistsQuery.toLowerCase())
       ) ||
-        artistsQuery === "")
+        artistsQuery === "") &&
+      (comic.writers.some((writer) =>
+        writer.toLowerCase().includes(writersQuery.toLowerCase())
+      ) ||
+        writersQuery === "")
     );
   });
 
@@ -57,8 +62,8 @@ export default function ComicsList() {
             ))}
           </select>
         </div>
-        <div className="creatorsFilter">
-          <span>CREATORS</span>
+        <div className="artistsFilter">
+          <span>ARTISTS</span>
           <select
             name="filterArtists"
             onChange={(e) => setArtistsQuery(e.target.value)}
@@ -68,6 +73,21 @@ export default function ComicsList() {
             {[...new Set(comics.flatMap((comic) => comic.artists))].map(
               (artist) => {
                 return <option value={artist}>{artist}</option>;
+              }
+            )}
+          </select>
+        </div>
+        <div className="writersFilter">
+          <span>WRITERS</span>
+          <select
+            name="filterWriters"
+            onChange={(e) => setWritersQuery(e.target.value)}
+            value={writersQuery}
+          >
+            <option value="">Select a Writer</option>
+            {[...new Set(comics.flatMap((comic) => comic.writers))].map(
+              (writer) => {
+                return <option value={writer}>{writer}</option>;
               }
             )}
           </select>
