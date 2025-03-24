@@ -109,19 +109,19 @@ export default function Footer() {
           <div className="socials d-flex">
             <h3>follow us</h3>
             <a href="">
-              <img src="/public/footer-facebook.png" alt="" />
+              <img src="/footer-facebook.png" alt="" />
             </a>
             <a href="">
-              <img src="/public/footer-twitter.png" alt="" />
+              <img src="/footer-twitter.png" alt="" />
             </a>
             <a href="">
-              <img src="/public/footer-youtube.png" alt="" />
+              <img src="/footer-youtube.png" alt="" />
             </a>
             <a href="">
-              <img src="/public/footer-pinterest.png" alt="" />
+              <img src="/footer-pinterest.png" alt="" />
             </a>
             <a href="">
-              <img src="/public/footer-periscope.png" alt="" />
+              <img src="/footer-periscope.png" alt="" />
             </a>
           </div>
         </div>

@@ -1,6 +1,4 @@
-import navLinks from "../data/navLinks";
-
-export default function Header() {
+export default function Header({ links }) {
   // LOGIC HERE
 
   return (
@@ -10,7 +8,7 @@ export default function Header() {
           <img src="../../public/dc-logo.png" alt="" />
         </div>
         <ul className="unstyled-list">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <li key={link.id}>
               <a href={link.link}>{link.name}</a>
             </li>
